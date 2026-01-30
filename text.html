@@ -9,20 +9,56 @@
     <!DOCTYPE html>   
 <html>   
         
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Product Card</title>
     <style>
-        div {border: auto dotted solid #230a03;background-color: aquamarine;
-           
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
-        
-        
-       
+
+        .product-card {
+            width: 60%;              /* adaptive width */
+            height: 400px;           /* fixed height */
+            border: 2px solid #333;  /* border shorthand */
+            border-radius: 12px;
+            padding: 20px;           /* padding shorthand */
+            margin: 40px auto;       /* margin shorthand */
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            min-width: 200px;
+            border-radius: 8px;
+        }
+
+        .product-card h2 {
+            margin: 15px 0 10px;
+            color: #2c3e50;
+        }
+
+        .product-card p {
+            color: #555;
+        }
     </style>
-    </head>
-    <title>CSS Icons</title> 
+</head>
 <body>
-  <div>
-    This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.
-  </div>
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61RahTQtAqL._AC_UF1000,1000_QL80_.jpg" alt="Product Image">
+
+        <h2>Wireless Headphones</h2>
+
+        <p>
+            Experience high-quality sound with these comfortable wireless headphones,
+            perfect for music, calls, and everyday use.
+        </p>
+    </div>
+
 </body>
 </html>
