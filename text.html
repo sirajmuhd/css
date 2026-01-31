@@ -2,63 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>   
-<html>   
-        
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Product Card</title>
+    <title>Restaurant Menu</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #f4f4f4;
         }
 
-        .product-card {
-            width: 60%;              /* adaptive width */
-            height: 400px;           /* fixed height */
-            border: 2px solid #333;  /* border shorthand */
-            border-radius: 12px;
-            padding: 20px;           /* padding shorthand */
-            margin: 40px auto;       /* margin shorthand */
-            background-color: #fff;
-            box-sizing: border-box;
-        }
-
-        .product-card img {
-            max-width: 100%;
-            min-width: 200px;
-            border-radius: 8px;
-        }
-
-        .product-card h2 {
-            margin: 15px 0 10px;
+        /* Restaurant name */
+        h3 {
+            text-align: right;
+            font-family: "Courier New", monospace;
+            font-size: 26px;
             color: #2c3e50;
+            margin-right: 40px;
         }
 
-        .product-card p {
+        /* Welcome message */
+        .welcome {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            word-spacing: 6px;
+            margin: 20px 0;
             color: #555;
+        }
+
+        /* Table styling */
+        table {
+            width: 60%;
+            margin: 30px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid #333;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        /* Link styling */
+        a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+
+        a:hover {
+            color: #e74c3c;
+        }
+
+        /* Icon styling */
+        .icon {
+            color: #e67e22;
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
 
-    <div class="product-card">
-        <img src="https://m.media-amazon.com/images/I/61RahTQtAqL._AC_UF1000,1000_QL80_.jpg" alt="Product Image">
+    <h3>
+        <i class="fa-solid fa-utensils icon"></i>
+        <i class="fa-solid fa-mug-hot icon"></i>
+        Sunrise Diner
+    </h3>
 
-        <h2>Wireless Headphones</h2>
+    <p class="welcome">
+        Welcome to our restaurant
+    </p>
 
-        <p>
-            Experience high-quality sound with these comfortable wireless headphones,
-            perfect for music, calls, and everyday use.
-        </p>
-    </div>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Veg Burger</td>
+            <td>$5.99</td>
+        </tr>
+        <tr>
+            <td>Grilled Sandwich</td>
+            <td>$4.49</td>
+        </tr>
+        <tr>
+            <td>Fresh Coffee</td>
+            <td>$2.99</td>
+        </tr>
+    </table>
+
+    <p style="text-align:center;">
+        <a href="#">View Full Menu</a>
+    </p>
 
 </body>
 </html>
