@@ -1,33 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Link Button</title>
+<meta charset="UTF-8">
+<title>Responsive Login Page</title>
 
-  <style>
-    /* Style anchor like a button */
-    .btn-link {
-      display: inline-block;
-      text-decoration: none;     /* remove underline */
-      background-color: #007bff;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 6px;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      transition: opacity 0.3s ease; /* smooth hover effect */
-    }
+<style>
+*{
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-    /* Hover effect using opacity */
-    .btn-link:hover {
-      opacity: 0.6;
-    }
-  </style>
+body{
+  margin: 0;
+}
+
+/* Main container */
+.container{
+  display: flex;
+  height: 100vh;
+}
+
+/* Left gradient section */
+.left{
+  width: 50%;
+  background: linear-gradient(to bottom, #7d8fa3, #e7b79d);
+}
+
+/* Right login section */
+.right{
+  width: 50%;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login box */
+.login-box{
+  width: 350px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+/* Title */
+.login-box h2{
+  color: #b3472d;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label{
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"]{
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Remember me */
+.remember{
+  margin: 10px 0;
+}
+
+/* Button */
+button{
+  width: 100%;
+  padding: 10px;
+  background-color: #c85a3a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile view */
+@media screen and (max-width: 768px){
+
+  .container{
+    flex-direction: column;
+  }
+
+  .left{
+    display: none;
+  }
+
+  .right{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .login-box{
+    width: 90%;
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <a href="https://www.goal.com/en-in/lists/man-city-player-ratings-vs-newcastle-omar-marmoush-james-trafford/bltdcb7a515115b158a" class="btn-link">Click Me</a>
-  
+<div class="container">
 
-</body>
-</html>
+  <div class="left"></div>
+
+  <div class="right">
+    <div class="login-box">
+      <h2>Login Form</h2>
+
+      <label>Email :</label>
+      <input type="text">
+
+      <label>Password :</label>
+      <input type="password">
+
+      <div class="remember">
+        <input type="checkbox"> Remember Me
+      </div>
+
+      <button>Login</button>
+    </div>
+  </div>
+
+</div>
