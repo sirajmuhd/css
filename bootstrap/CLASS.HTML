@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Course Progress Dashboard</title>
+  <title>Product Feature Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap 4 CSS -->
@@ -12,103 +12,154 @@
     body {
       background-color: #f8f9fa;
     }
-    .dashboard {
-      max-width: 700px;
-      margin: 50px auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    .card {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <div class="dashboard">
+<div class="container my-5">
 
-    <!-- Breadcrumb -->
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb bg-light">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Courses</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Web Development</li>
-      </ol>
-    </nav>
+  <!-- Page Heading -->
+  <h2 class="text-center mb-4">Featured Products</h2>
 
-    <!-- Heading with Badge -->
-    <h2>
-      Web Development Course
-      <span class="badge badge-success">New</span>
-    </h2>
+  <!-- Product Cards Row -->
+  <div class="row">
 
-    <hr>
+    <!-- Product 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-header font-weight-bold">
+          Smart Watch
+        </div>
+        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Smart Watch">
+        <div class="card-body">
+          <p class="card-text">
+            A stylish smartwatch with fitness tracking and notification features.
+          </p>
+          <a href="#" class="card-link">Read More</a>
 
-    <!-- Progress Bars -->
+          <!-- Dropdown -->
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+              Options
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Add to Wishlist</a>
+              <a class="dropdown-item" href="#">Compare</a>
+              <a class="dropdown-item text-danger" href="#">Report</a>
+            </div>
+          </div>
 
-    <!-- HTML -->
-    <h6>HTML – 100% Complete</h6>
-    <div class="progress mb-3">
-      <div class="progress-bar bg-success progress-bar-striped"
-           role="progressbar"
-           style="width: 100%;">
-        100%
+        </div>
       </div>
     </div>
 
-    <!-- CSS -->
-    <h6>CSS – 75% Complete</h6>
-    <div class="progress mb-3">
-      <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
-           role="progressbar"
-           style="width: 75%;">
-        75%
+    <!-- Product 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-header font-weight-bold">
+          Wireless Headphones
+        </div>
+        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Headphones">
+        <div class="card-body">
+          <p class="card-text">
+            High-quality sound with noise cancellation and long battery life.
+          </p>
+          <a href="#" class="card-link">Read More</a>
+
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+              Options
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Add to Wishlist</a>
+              <a class="dropdown-item" href="#">Compare</a>
+              <a class="dropdown-item text-danger" href="#">Report</a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
-    <!-- JavaScript -->
-    <h6>JavaScript – 50% Complete</h6>
-    <div class="progress mb-3">
-      <div class="progress-bar bg-warning"
-           role="progressbar"
-           style="width: 50%;">
-        50%
+    <!-- Product 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-header font-weight-bold">
+          Gaming Laptop
+        </div>
+        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Laptop">
+        <div class="card-body">
+          <p class="card-text">
+            Powerful gaming laptop with high-speed performance and graphics.
+          </p>
+          <a href="#" class="card-link">Read More</a>
+
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+              Options
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Add to Wishlist</a>
+              <a class="dropdown-item" href="#">Compare</a>
+              <a class="dropdown-item text-danger" href="#">Report</a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-
-    <!-- Bootstrap -->
-    <h6>Bootstrap – 25% Complete</h6>
-    <div class="progress mb-4">
-      <div class="progress-bar bg-danger"
-           role="progressbar"
-           style="width: 25%;">
-        25%
-      </div>
-    </div>
-
-    <!-- Button Group -->
-    <div class="btn-group mb-4" role="group">
-      <button type="button" class="btn btn-success">Start</button>
-      <button type="button" class="btn btn-warning">Pause</button>
-      <button type="button" class="btn btn-danger">Reset</button>
-    </div>
-
-    <!-- Pagination -->
-    <nav>
-      <ul class="pagination justify-content-center">
-        <li class="page-item active">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item disabled">
-          <a class="page-link" href="#">3</a>
-        </li>
-      </ul>
-    </nav>
 
   </div>
+
+  <!-- Accordion Section -->
+  <h3 class="mt-5 mb-3">Product FAQs</h3>
+
+  <div id="faqAccordion">
+
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#faq1">
+          What is the warranty period?
+        </a>
+      </div>
+      <div id="faq1" class="collapse show" data-parent="#faqAccordion">
+        <div class="card-body">
+          All products come with a 1-year manufacturer warranty.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#faq2">
+          Do you offer free shipping?
+        </a>
+      </div>
+      <div id="faq2" class="collapse" data-parent="#faqAccordion">
+        <div class="card-body">
+          Yes, free shipping is available on orders above $50.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#faq3">
+          Can I return the product?
+        </a>
+      </div>
+      <div id="faq3" class="collapse" data-parent="#faqAccordion">
+        <div class="card-body">
+          Products can be returned within 30 days of purchase.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </div>
 
 <!-- Bootstrap 4 JS -->
