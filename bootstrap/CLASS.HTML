@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWay Travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f6f9;
+        }
+        .sidebar {
+            min-height: 100vh;
+            background-color: #e9ecef;
+        }
+    </style>
 </head>
 <body>
-  
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container justify-content-center">
+        <div class="navbar-nav text-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Destinations</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bookings</a>
+            <a class="nav-link" href="#">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2 sidebar p-4">
+            <h5 class="mb-3">Menu</h5>
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item mb-2">
+                    <a class="nav-link active" href="#">Offers</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#">Packages</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10 p-4">
+            <h2 class="mb-4">Welcome to SkyWay Travels</h2>
+
+            <!-- Navigation Pills -->
+            <ul class="nav nav-pills mb-4">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Beach</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mountain</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">City</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Adventure</a>
+                </li>
+            </ul>
+
+            <p>Select a destination type to explore amazing travel experiences with SkyWay Travels.</p>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
