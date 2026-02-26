@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helper Tool</title>
+</head>
+<body>
+    <script>
+        var userProfile={
+            username:" CoolUser99 ",
+            bio:" I LOVE coding! JavaScript is Great!!! "
+        };
+        function cleanUserBio(profile){
+            var tr_bio=profile.bio.trim();
+            var tr_username=profile.username.trim();
+            var lower_username=tr_username.toLowerCase();
+            var lower_bio=tr_bio.toLowerCase();
+            var replaced_bio=lower_bio.replace(/javascript/g,"JS");
+            var length=replaced_bio.length;
+            return{
+                username: lower_username,
+                bio: replaced_bio,
+                bioLength: length
+            };
+        };
+        var output=cleanUserBio(userProfile);
+        console.log(output);
+    </script>
+</body>
+</html>
