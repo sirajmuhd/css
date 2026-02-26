@@ -1,24 +1,25 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library System</title>
-</head>
+<html>
 <body>
-    <script>
-        let book = {
-            title: "The Alchemist",
-            author: "Paulo Coelho",
-            year: 1988,
-            getSummary: function() {
-                console.log("The book '" + book.title + "' was written by " + book.author + " in " + book.year);
-            }
-        };
-        function printBookSummary(bookObj) {
-            console.log(bookObj.getSummary());
-        }
-        printBookSummary(book);
-    </script>
+
+<h2>JavaScript Strings</h2>
+
+<script>
+let student = { 
+    name: 'Kevin', 
+    age: 20,
+    marks: {
+        science: 70,
+        math: 75
+    }
+}
+
+// accessing property of student object
+console.log(student.marks);
+
+// accessing property of marks object
+console.log(student.marks.science); 
+</script>
 </body>
 </html>

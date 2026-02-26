@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <script>
+        var feedback="   I loved the FOOD and the service!   ";
+        var trimmed=feedback.trim();
+        var lower=trimmed.toLowerCase();
+        var replaced=lower.replace("food","ambience");
+        var pos=replaced.search("service");
+        var split=replaced.split(" ");
+        console.log("Original:", feedback);
+        console.log("Trimmed:", trimmed);
+        console.log("Lowercase:", lower);
+        console.log("Replaced:", replaced);
+        console.log("Position of 'service':", pos);
+        console.log("Array of words:", split);
+    </script>
+</body>
+</html>
