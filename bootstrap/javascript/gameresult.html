@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Result Generator</title>
+</head>
+<body>
+    <script>
+        var random= Math.floor(Math.random()* 50) + 1;
+        var score_string= "45";
+        var score_conv= Number(score_string);
+        var diff= Math.abs(random - score_conv);
+        var sqrt= Math.sqrt(score_conv);
+        var pi= Math.PI;
+        var implicit= "20" * 5;
+        var maximum= Math.max(10, 20, random);
+        var minimum= Math.min(10, 20, random);
+        console.log("Mystery Level:", random);
+        console.log("User Score:", score_string);
+        console.log("Absolute Difference:", diff);
+        console.log("Square Root of User Score:", sqrt);
+        console.log("Value of Pi:", pi);
+        console.log("Implicit Conversion ('20' * 5):", implicit);
+        console.log("Highest Value:", maximum);
+        console.log("Lowest Value:", minimum);
+    </script>
+</body>
+</html>
