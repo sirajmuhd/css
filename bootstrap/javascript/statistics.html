@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Widget</title>
+</head>
+<body>
+    <script>
+        var randomNo= Math.floor(Math.random()* 100) + 1;
+        var score_string= "75";
+        var score_conv= Number(score_string);
+        var diff= randomNo - score_conv;
+        var round_sqrt= Math.round(Math.sqrt(score_conv));
+        var pi= Math.PI;
+        var implicit= "50" * 2;
+        console.log("Random Number:", randomNo);
+        console.log("User Score:", score_conv);
+        console.log("Difference:", diff);
+        console.log("Rounded Square Root:", round_sqrt);
+        console.log("Value of PI:", pi);
+        console.log("Implicit Conversion ('50' * 2):", implicit);
+    </script>
+</body>
+</html>
